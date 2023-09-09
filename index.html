@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <!--Google fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Material icones -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <!-- Header -->
+        <header class="header">
+            <img class="logo2" src="imagens/logo.jpg" alt="logo" >
+            <div class="logo">
+                MINHA LOJA
+            </div>
+            <div class="header-left">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="#">
+                            <span class="material-icons-outlined">dashboard</span> DASHBOARD
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">
+                            <span class="material-icons-outlined">inventory_2</span> PRODUTOS
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">
+                            <span class="material-icons-outlined">poll</span> RELATÓRIO
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">
+                            <span class="material-icons-outlined">settings</span>CONFIGURAÇÕES 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">account_circle</span>
+            </div>
+        </header>
+        <!-- Final Header -->
+
+        <!-- InicioMain -->
+        <main class="main-container">
+            <div class="main-cards">
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p>PRODUTOS</p>
+                        <div class="icon icon-shape background-blue text-primary">
+                            <span class="material-icons-outlined">inventory_2</span>
+                        </div>
+                    </div>
+                    <span class="text-primary">391</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p>PEDIDOS</p>
+                        <div class="icon icon-shape background-orange text-primary">
+                            <span class="material-icons-outlined">add_shopping_cart</span>
+                        </div>
+                    </div>
+                    <span class="text-primary">98</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p>VENDAS</p>
+                        <div class="icon icon-shape background-green text-primary">
+                            <span class="material-icons-outlined">shopping_cart</span>
+                        </div>
+                    </div>
+                    <span class="text-primary">135</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p>ALERTAS</p>
+                        <div class="icon icon-shape background-red text-primary">
+                            <span class="material-icons-outlined">notification_important</span>
+                        </div>
+                    </div>
+                    <span class="text-primary">56</span>
+                </div>
+
+            </div>
+
+            <div class="charts">
+
+                <div class="charts-card">
+                    <p class="chart-title">Receita x Lucro</p>
+                    <div id="bar-chart"></div>
+                </div>
+
+                <div class="charts-card">
+                    <p class="chart-title">Pedidos de Compra e Venda</p>
+                    <div id="area-chart"></div>
+                </div>
+
+            </div>
+        </main>
+        <!-- Final Main -->
+    </div>
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.40.0/apexcharts.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
